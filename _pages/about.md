@@ -11,31 +11,57 @@ I am a second-year Ph.D. student major in Computer Engineering at the University
 
 My research interest lies in the intersection of Machine Learning, Systems, and Large Language Models. Specifically, I aim to improve the reliability and efficiency of intelligent systems by leveraging graph-based learning, physics-informed modeling, and scalable algorithm design. I am always open to potential collaborations, please feel free to reach out.
 
-🔥 News
+<!-- 🔥 News
 ======
-------
+------ -->
 
 📚 Educations
 ======
 ------
+
++ 2024.08 - current Ph.D in Computer Engineering, University of Southern California.
+
++ 2020.08 - 2024.06 B.E. in Communications from the School of Electronic Information and Communications, Huazhong University of Science and Technology (HUST).
 
 
 💻 Experiences
 ======
 ------
 
++ 2025.08 - current, Research Assistant, University of Southern California.
++ 2023.05 - 2024.01, Machine Learning Research Intern at Baidu Research, Beijing, China
++ 2023.01 - 2024.02, Visiting Student, Tsinghua University.
+
+
+
 📑 Publications
 ======
 ------
 
-💬 Services
++ [A structure-aware framework for learning device placements on computation graphs](https://arxiv.org/pdf/2405.14185), Shukai Duan\*, Heng Ping\*, Nikos Kanakaris\*, Xiongye Xiao\*, Panagiotis Kyriakis\*, Nesreen K Ahmed, <u>Peiyu Zhang</u>, Guixiang Ma, Mihai Capotă, Shahin Nazarian, Theodore L Willke, Paul Bogdan *Advances in Neural Information Processing Systems (NeurIPS 2024)*, pp. 81748–81772.  
+
++ [Hdlcore: A training-free framework for mitigating hallucinations in LLM-generated HDL](https://arxiv.org/pdf/2503.16528), Heng Ping\*, Shixuan Li\*, <u>Peiyu Zhang*</u>, Anzhe Cheng\*, Shukai Duan\*, Nikos Kanakaris, Xiongye Xiao, Wei Yang, Shahin Nazarian, Andrei Irimia, Paul Bogdan, *IEEE LAD 2025*.  
+
++ [Topology-aware Tensor Decomposition for Meta-graph Learning](https://arxiv.org/pdf/2101.01078), Hansi Yang, <u>Peiyu Zhang</u>, Quanming Yao, *arXiv preprint arXiv:2101.01078*, 2023.  
+
++ [Climatellm: Efficient weather forecasting via frequency-aware large language models](https://arxiv.org/pdf/2502.11059), Shixuan Li\*, Wei Yang\*, <u>Peiyu Zhang</u>, Xiongye Xiao, Defu Cao, Yuehan Qin, Xiaole Zhang, Yue Zhao, Paul Bogdan, *arXiv preprint arXiv:2502.11059*, 2025. *(under review)*  
+
++ [H²GFM: Towards unifying Homogeneity and Heterogeneity on Text-Attributed Graphs](https://arxiv.org/pdf/2506.08298), Trung-Kien Nguyen, Heng Ping, Shixuan Li, <u>Peiyu Zhang</u>, Nikos Kanakaris, Nicholas Kotov, Paul Bogdan, *arXiv preprint arXiv:2506.08298*, 2025. *(under review)*  
+
++ [End-to-End Learning Framework for Solving Non-Markovian Optimal Control](https://openreview.net/pdf?id=1k4dKH1XOz), Xiaole Zhang\*, <u>Peiyu Zhang*</u>, Xiongye Xiao\*, Shixuan Li, Vasileios Tzoumas, Vijay Gupta, Paul Bogdan, *ICML 2025*.  
+
+
+
+<!-- 💬 Services
 ======
-------
+------ -->
 
 😊 Honors and Awards
 ======
 ------
 
++ Annenberg Graduate Fellowship, 2024
++ Outstanding Undergraduate Graduates, 2024
 
 
 
