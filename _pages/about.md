@@ -60,8 +60,10 @@ My research interest lies in the intersection of Machine Learning, Systems, and 
 ======
 ------
 
-+ Annenberg Graduate Fellowship, 2024
-+ Outstanding Undergraduate Graduates, 2024
++ Annenberg Graduate Fellowship, USC, 2024
++ Outstanding Undergraduate Graduates, HUST, 2024
++ National Olympiad in Informatics in Province(NOIP), JIANGSU
+
 
 
 
