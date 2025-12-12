@@ -50,6 +50,18 @@ My research interest lies in the intersection of Machine Learning, Systems, and 
 
 + [End-to-End Learning Framework for Solving Non-Markovian Optimal Control](https://openreview.net/pdf?id=1k4dKH1XOz), Xiaole Zhang\*, <u>Peiyu Zhang*</u>, Xiongye Xiao\*, Shixuan Li, Vasileios Tzoumas, Vijay Gupta, Paul Bogdan, *ICML 2025*.  
 
++ [MIHC: Multi-View Interpretable Hypergraph Neural Networks with Information Bottleneck for Chip Congestion Prediction](https://openreview.net/pdf?id=YFQ0Xx5YlW), Zeyue Zhang\*, Heng Ping\*, <u>Peiyu Zhang</u>, Nikos Kanakaris, Xiaoling Lu, Paul Bogdan, Xiongye Xiao, *Advances in Neural Information Processing Systems (NeurIPS 2025).*
+
++ HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling,  <u>Peiyu Zhang</u>, Heng Ping, Nikos Kanakaris, Yucheng Zhao, Shixuan Li, Xiongye Xiao, Paul Bogdan, *(under review).*
+
++ [VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation](https://arxiv.org/pdf/2510.27617), Heng Ping, Arijit Bhattacharjee, <u>Peiyu Zhang</u>, Shixuan Li, Wei Yang, Anzhe Cheng, Xiaole Zhang, Jesse Thomason, Ali Jannesari, Nesreen Ahmed, Paul Bogdan, *(under review).*
+
++ EVINCE: Advancing Multi-Agent LLMs Adjudication Beyond Majority Vote via Evidence Auditing, Wei Yang, Shixuan Li, <u>Peiyu Zhang</u>, Jiacheng Pang, Paul Bogdan, Jesse Thomason, *(under review).*
+
++ [Toward Evolutionary Intelligence: LLM-based Agentic Systems with Multi-Agent Reinforcement Learning](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5819182), Wei Yang, Muyan Weng, Jiacheng Pang, Defu Cao, Heng Ping, <u>Peiyu Zhang</u>, Shixuan Li, Yue Zhao, Qiang Yang, Mengdi Wang, Yan Liu,  *Survey manuscript under review.*
+
+
+
 
 
 <!-- 💬 Services
