@@ -52,9 +52,9 @@ My research interest lies in the intersection of Machine Learning, Systems, and 
 
 + [MIHC: Multi-View Interpretable Hypergraph Neural Networks with Information Bottleneck for Chip Congestion Prediction](https://openreview.net/pdf?id=YFQ0Xx5YlW), Zeyue Zhang\*, Heng Ping\*, <u>Peiyu Zhang</u>, Nikos Kanakaris, Xiaoling Lu, Paul Bogdan, Xiongye Xiao, *Advances in Neural Information Processing Systems (NeurIPS 2025).*
 
-+ HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling,  <u>Peiyu Zhang</u>, Heng Ping, Nikos Kanakaris, Yucheng Zhao, Shixuan Li, Xiongye Xiao, Paul Bogdan, *(under review).*
++ [VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation](https://arxiv.org/pdf/2510.27617), Heng Ping, Arijit Bhattacharjee, <u>Peiyu Zhang</u>, Shixuan Li, Wei Yang, Anzhe Cheng, Xiaole Zhang, Jesse Thomason, Ali Jannesari, Nesreen Ahmed, Paul Bogdan, *Annual Conference on Machine Learning and Systems (MLSys 2026)*
 
-+ [VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation](https://arxiv.org/pdf/2510.27617), Heng Ping, Arijit Bhattacharjee, <u>Peiyu Zhang</u>, Shixuan Li, Wei Yang, Anzhe Cheng, Xiaole Zhang, Jesse Thomason, Ali Jannesari, Nesreen Ahmed, Paul Bogdan, *(under review).*
++ HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling,  <u>Peiyu Zhang</u>, Heng Ping, Nikos Kanakaris, Yucheng Zhao, Shixuan Li, Xiongye Xiao, Paul Bogdan, *(under review).*
 
 + EVINCE: Advancing Multi-Agent LLMs Adjudication Beyond Majority Vote via Evidence Auditing, Wei Yang, Shixuan Li, <u>Peiyu Zhang</u>, Jiacheng Pang, Paul Bogdan, Jesse Thomason, *(under review).*
 
