@@ -1,0 +1,3 @@
+# Local Docker preview only (GitHub Pages ignores this file).
+# Makes generated links point at localhost instead of 0.0.0.0, which Windows browsers can't open.
+url: "http://localhost:4000"

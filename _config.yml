@@ -177,6 +177,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - docker-compose*.yaml
   - Dockerfile
   - Gemfile
   - Gruntfile.js

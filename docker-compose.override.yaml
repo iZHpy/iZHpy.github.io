@@ -1,0 +1,8 @@
+# Windows-friendly local preview, merged automatically by `docker compose up`.
+services:
+  jekyll-site:
+    environment:
+      # Not "development", so `jekyll serve` keeps the url from _config.docker.yml instead of http://0.0.0.0:4000
+      JEKYLL_ENV: docker
+    # --force_polling: file-change events don't reach the container from a Windows folder, so poll instead
+    command: jekyll serve -H 0.0.0.0 -w --force_polling --config _config.yml,_config.docker.yml
