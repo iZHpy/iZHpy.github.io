@@ -8,10 +8,11 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: var(--global-bg-color);
-  font-size: 8p; // 16px;
+  font-size: 16px;  // phones (was the typo "8p", which browsers ignored, so it was 16px already)
 
+  // Base size on tablets/desktops; nearly all text sizes scale from this (template default: 18px)
   @include breakpoint($medium) {
-    font-size: 10px; // 18px;
+    font-size: 12px;  // was 10px
   }
 
   -webkit-text-size-adjust: 100%;

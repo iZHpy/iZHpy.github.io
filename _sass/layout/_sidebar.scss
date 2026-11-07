@@ -96,8 +96,14 @@
   img {
     max-width: 175px;
     border-radius: 50%;
+    // Crop non-square photos to a square so border-radius gives a circle, not an oval
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;  // keep the head in frame
 
     @include breakpoint($large) {
+      width: 100%;
+      max-width: 250px;  // a bit larger than the template's 175px; narrow sidebars cap it
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }

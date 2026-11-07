@@ -2,14 +2,28 @@
 permalink: /
 title: ""
 author_profile: true
+hide_sidebar_avatar_name: true  # name and photo are shown in the intro below instead
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a second-year Ph.D. student major in Computer Engineering at the University of Southern California (USC), advised by [Prof. Paul Bogdan](https://cps.usc.edu/). I received my B.E. in Communications from the School of Electronic Information and Communications, Huazhong University of Science and Technology (HUST), in 2024.
+<h1 class="home-name">{{ site.author.name }}</h1>
 
-My research interest lies in the intersection of Machine Learning, Systems, and Large Language Models. Specifically, I aim to improve the reliability and efficiency of intelligent systems by leveraging graph-based learning, physics-informed modeling, and scalable algorithm design. I am always open to potential collaborations, please feel free to reach out.
+<div class="home-intro" markdown="1">
+<div class="home-intro__text" markdown="1">
+
+Hi there! 👋 I am a third-year Ph.D. student in Computer Engineering at the [University of Southern California (USC)](https://www.usc.edu/), advised by [Prof. Paul Bogdan](https://cps.usc.edu/). I received my B.E. in Electronic Information and Communication Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/) in 2024.
+
+My research focuses on **Multi-Agent LLM Systems** and **Machine Learning Systems (MLSys)**, with interests in agentic post-training, LLM modeling, and efficiency. I am particularly interested in long-context reasoning and the latency and efficiency of multi-agent systems, as well as MLSys topics including reasoning compression and efficient operators (kernels). I have also worked on LLM agents for hardware design (spec-to-HDL generation) and graph neural networks (GNNs).
+
+I am always open to potential collaborations, please feel free to reach out.
+
+</div>
+<div class="home-intro__photo">
+<img src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="{{ site.author.name }}" fetchpriority="high"/>
+</div>
+</div>
 
 <!-- 🔥 News
 ======
@@ -19,9 +33,9 @@ My research interest lies in the intersection of Machine Learning, Systems, and 
 ======
 ------
 
-+ 2024.08 - current Ph.D in Computer Engineering, University of Southern California.
++ 2024.08 - current Ph.D. in Computer Engineering, [University of Southern California (USC)](https://www.usc.edu/).
 
-+ 2020.08 - 2024.06 B.E. in Communications from the School of Electronic Information and Communications, Huazhong University of Science and Technology (HUST).
++ 2020.08 - 2024.06 B.E. in Electronic Information and Communication Engineering, [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
 
 
 💻 Experiences

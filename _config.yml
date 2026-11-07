@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Peiyu Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Student at University of Southern California."
+  bio              : "Ph.D. Student at USC"
   location         : "Los Angeles, CA"
   employer         : "University of Southern California"
   uri              : # URL
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "peiyu-zhang-04279637b"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

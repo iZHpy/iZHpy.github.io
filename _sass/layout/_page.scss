@@ -59,6 +59,12 @@
     font-size: 1.2em;
   }
 
+  // In Markdown lists with blank lines between items, each item is wrapped in a <p>;
+  // without this its text would be enlarged twice (1.2 x 1.2)
+  li > p {
+    font-size: 1em;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
@@ -398,4 +404,55 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+/*
+   Homepage intro (_pages/about.md): large name, then the bio with the photo on its right
+   ========================================================================== */
+
+.page__content .home-name {
+  margin: 0 0 0.6em;
+  font-size: $type-size-1;  // ~2.4x the base size
+  font-weight: 500;  // medium, same as the other headings
+  line-height: 1.15;
+}
+
+.home-intro {
+  display: flex;
+  flex-direction: column-reverse;  // phones: photo above the text
+  align-items: center;
+  gap: 1em;
+
+  @include breakpoint($medium) {
+    flex-direction: row;  // tablets and up: text left, photo right
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+
+  @include breakpoint($x-large) {
+    gap: 2.5em;
+  }
+}
+
+.home-intro__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-intro__photo {
+  flex: none;
+
+  img {
+    display: block;
+    width: 180px;  // photo size on phones and medium-width windows
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;  // keep the head in frame
+    border-radius: 50%;
+
+    @include breakpoint($x-large) {
+      width: 280px;  // photo size on wide windows (1280px+)
+    }
+  }
 }
