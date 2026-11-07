@@ -25,26 +25,47 @@ I am always open to potential collaborations, please feel free to reach out.
 </div>
 </div>
 
-<!-- 🔥 News
+🔥 News
 ======
------- -->
+------
+
+- *2026.10*: &nbsp;🎉 One paper accepted to **EMNLP 2026**!
+- *2026.07*: &nbsp;🎉 One paper accepted to **ICCAD 2026**!
+- *2026.07*: &nbsp;🎉 One paper published in **npj Computational Materials**!
+- *2026.02*: &nbsp;🎉 One paper accepted to **MLSys 2026**!
 
 📚 Educations
 ======
 ------
 
-+ 2024.08 - current Ph.D. in Computer Engineering, [University of Southern California (USC)](https://www.usc.edu/).
+<div class="exp-item">
+<img class="exp-item__logo" src="{{ '/images/logos/usc.png' | relative_url }}" alt="USC logo"/>
+<div class="exp-item__text">
+<strong>University of Southern California (USC)</strong>, Los Angeles, CA<br/>
+<strong>Ph.D. in Computer Engineering</strong>&nbsp;&nbsp; <span class="exp-item__date">Aug 2024 – Present</span>
+</div>
+</div>
 
-+ 2020.08 - 2024.06 B.E. in Electronic Information and Communication Engineering, [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
+<div class="exp-item">
+<img class="exp-item__logo" src="{{ '/images/logos/hust.png' | relative_url }}" alt="HUST logo"/>
+<div class="exp-item__text">
+<strong>Huazhong University of Science and Technology (HUST)</strong>, Wuhan, China<br/>
+<strong>B.E. in Electronic Information and Communication Engineering</strong>&nbsp;&nbsp; <span class="exp-item__date">Aug 2020 – Jun 2024</span>
+</div>
+</div>
 
 
 💻 Experiences
 ======
 ------
 
-+ 2025.08 - current, Research Assistant, University of Southern California.
-+ 2023.05 - 2024.01, Machine Learning Research Intern at Baidu Research, Beijing, China
-+ 2023.01 - 2024.02, Visiting Student, Tsinghua University.
+<div class="exp-item">
+<img class="exp-item__logo" src="{{ '/images/logos/baidu.png' | relative_url }}" alt="Baidu logo"/>
+<div class="exp-item__text">
+<strong>Baidu Research</strong>, Beijing, China<br/>
+<strong>Machine Learning Research Intern</strong>&nbsp;&nbsp; <span class="exp-item__date">May 2023 – Jan 2024</span>
+</div>
+</div>
 
 
 
@@ -52,27 +73,9 @@ I am always open to potential collaborations, please feel free to reach out.
 ======
 ------
 
-+ [A structure-aware framework for learning device placements on computation graphs](https://arxiv.org/pdf/2405.14185), Shukai Duan\*, Heng Ping\*, Nikos Kanakaris\*, Xiongye Xiao\*, Panagiotis Kyriakis\*, Nesreen K Ahmed, <u>Peiyu Zhang</u>, Guixiang Ma, Mihai Capotă, Shahin Nazarian, Theodore L Willke, Paul Bogdan *Advances in Neural Information Processing Systems (NeurIPS 2024)*, pp. 81748–81772.  
+<p class="pub-note">* Equal contribution</p>
 
-+ [Hdlcore: A training-free framework for mitigating hallucinations in LLM-generated HDL](https://arxiv.org/pdf/2503.16528), Heng Ping\*, Shixuan Li\*, <u>Peiyu Zhang*</u>, Anzhe Cheng\*, Shukai Duan\*, Nikos Kanakaris, Xiongye Xiao, Wei Yang, Shahin Nazarian, Andrei Irimia, Paul Bogdan, *IEEE LAD 2025*.  
-
-+ [Topology-aware Tensor Decomposition for Meta-graph Learning](https://arxiv.org/pdf/2101.01078), Hansi Yang, <u>Peiyu Zhang</u>, Quanming Yao, *arXiv preprint arXiv:2101.01078*, 2023.  
-
-+ [Climatellm: Efficient weather forecasting via frequency-aware large language models](https://arxiv.org/pdf/2502.11059), Shixuan Li\*, Wei Yang\*, <u>Peiyu Zhang</u>, Xiongye Xiao, Defu Cao, Yuehan Qin, Xiaole Zhang, Yue Zhao, Paul Bogdan, *arXiv preprint arXiv:2502.11059*, 2025. *(under review)*  
-
-+ [H²GFM: Towards unifying Homogeneity and Heterogeneity on Text-Attributed Graphs](https://arxiv.org/pdf/2506.08298), Trung-Kien Nguyen, Heng Ping, Shixuan Li, <u>Peiyu Zhang</u>, Nikos Kanakaris, Nicholas Kotov, Paul Bogdan, *arXiv preprint arXiv:2506.08298*, 2025. *(under review)*  
-
-+ [End-to-End Learning Framework for Solving Non-Markovian Optimal Control](https://openreview.net/pdf?id=1k4dKH1XOz), Xiaole Zhang\*, <u>Peiyu Zhang*</u>, Xiongye Xiao\*, Shixuan Li, Vasileios Tzoumas, Vijay Gupta, Paul Bogdan, *ICML 2025*.  
-
-+ [MIHC: Multi-View Interpretable Hypergraph Neural Networks with Information Bottleneck for Chip Congestion Prediction](https://openreview.net/pdf?id=YFQ0Xx5YlW), Zeyue Zhang\*, Heng Ping\*, <u>Peiyu Zhang</u>, Nikos Kanakaris, Xiaoling Lu, Paul Bogdan, Xiongye Xiao, *Advances in Neural Information Processing Systems (NeurIPS 2025).*
-
-+ [VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation](https://arxiv.org/pdf/2510.27617), Heng Ping, Arijit Bhattacharjee, <u>Peiyu Zhang</u>, Shixuan Li, Wei Yang, Anzhe Cheng, Xiaole Zhang, Jesse Thomason, Ali Jannesari, Nesreen Ahmed, Paul Bogdan, *Annual Conference on Machine Learning and Systems (MLSys 2026)*
-
-+ HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling,  <u>Peiyu Zhang</u>, Heng Ping, Nikos Kanakaris, Yucheng Zhao, Shixuan Li, Xiongye Xiao, Paul Bogdan, *(under review).*
-
-+ EVINCE: Advancing Multi-Agent LLMs Adjudication Beyond Majority Vote via Evidence Auditing, Wei Yang, Shixuan Li, <u>Peiyu Zhang</u>, Jiacheng Pang, Paul Bogdan, Jesse Thomason, *(under review).*
-
-+ [Toward Evolutionary Intelligence: LLM-based Agentic Systems with Multi-Agent Reinforcement Learning](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5819182), Wei Yang, Muyan Weng, Jiacheng Pang, Defu Cao, Heng Ping, <u>Peiyu Zhang</u>, Shixuan Li, Yue Zhao, Qiang Yang, Mengdi Wang, Yan Liu,  *Survey manuscript under review.*
+{% include publications-home.html %}
 
 
 

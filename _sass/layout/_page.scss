@@ -20,7 +20,7 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(1 of 12);  // empty space right of the text; was 2 of 12 (widen the text: lower it, e.g. 0)
   }
 
   .page__inner-wrap {
@@ -454,5 +454,241 @@
     @include breakpoint($x-large) {
       width: 280px;  // photo size on wide windows (1280px+)
     }
+  }
+}
+
+
+/*
+   Experience entries with a logo on the left (_pages/about.md)
+   ========================================================================== */
+
+.exp-item {
+  display: flex;
+  flex-direction: column;  // phones: logo above the text
+  align-items: flex-start;
+  gap: 0.5em;
+  margin: 1em 0 1.5em;
+  font-size: 1.2em;  // same size as the other body text
+  line-height: 1.6;
+
+  @include breakpoint($medium) {
+    flex-direction: row;  // tablets and up: logo left, text right
+    align-items: center;
+    gap: 1.5em;
+  }
+}
+
+// Logo box; each logo is scaled to fit inside it
+.exp-item__logo {
+  flex: none;
+  width: 170px;   // phones
+  height: 75px;
+  object-fit: contain;
+  object-position: left center;  // phones: line up with the text below
+
+  @include breakpoint($medium) {
+    width: 170px;  // medium-width windows (768-1279px)
+    height: 72px;
+    object-position: center;
+  }
+
+  @include breakpoint($x-large) {
+    width: 240px;  // wide windows (1280px+)
+    height: 100px;
+  }
+}
+
+.exp-item__text {
+  min-width: 0;
+}
+
+.exp-item__date {
+  white-space: nowrap;  // keep the date range on one line on phones
+}
+
+
+/*
+   Homepage publication list (_includes/publications-home.html)
+   ========================================================================== */
+
+.page__content .pub-note {
+  margin: 0 0 0.8em;
+  font-size: 1em;
+  color: var(--global-text-color-light);
+}
+
+.pub-item {
+  display: flex;
+  flex-direction: column;  // phones: figure above the text
+  gap: 0.6em;
+  margin-bottom: 1.8em;
+  font-size: 1.2em;  // same size as the other body text
+  line-height: 1.5;
+
+  @include breakpoint($medium) {
+    flex-direction: row;  // tablets and up: figure left, text right
+    align-items: flex-start;
+    gap: 1.25em;
+  }
+}
+
+.pub-item__fig {
+  flex: none;
+  width: 100%;
+  max-width: 360px;
+
+  @include breakpoint($medium) {
+    width: 200px;  // figure width on medium-width windows
+  }
+
+  @include breakpoint($x-large) {
+    width: 240px;  // figure width on wide windows (1280px+)
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2.3 / 1;  // same frame for every paper (figures range from 1.6:1 to 3.4:1)
+    object-fit: fill;       // stretch the figure to fill the frame exactly
+    padding: 3px;
+    background: #fff;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+  }
+}
+
+.pub-item__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-item__title {
+  font-weight: 600;
+  color: var(--global-text-color);  // plain black title; the link is the "Paper" button
+}
+
+.pub-author--extra {
+  display: none;  // folded authors
+}
+
+.pub-authors.is-expanded {
+  .pub-author--extra {
+    display: inline;
+  }
+
+  .pub-authors__gap {
+    display: none;
+  }
+}
+
+.pub-authors__toggle {
+  margin: 0 0 0 0.3em;
+  padding: 0 0.45em;
+  font: inherit;
+  font-size: 0.85em;
+  color: var(--global-link-color);
+  background: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--global-link-color);
+  }
+}
+
+.pub-item__venue {
+  font-style: italic;
+}
+
+// Paper / BibTeX / Code buttons
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.4em;
+}
+
+.page__content .pub-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.1em 0.7em;
+  font: inherit;
+  font-size: 0.8em;
+  line-height: 1.6;
+  color: var(--global-link-color);
+  text-decoration: none;
+  background: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover,
+  &.is-open {
+    color: #fff;
+    text-decoration: none;
+    background: var(--global-link-color);
+    border-color: var(--global-link-color);
+  }
+}
+
+// Placeholder button (value "TBD" in _data/publications_home.yml): greyed out, not clickable yet
+.page__content .pub-btn--soon {
+  opacity: 0.5;
+  cursor: default;
+
+  &:hover {
+    color: var(--global-link-color);
+    background: none;
+    border-color: var(--global-border-color);
+  }
+}
+
+.pub-btn__caret {
+  transition: transform 0.15s;
+
+  .is-open & {
+    transform: rotate(180deg);
+  }
+}
+
+// BibTeX drop-down
+.pub-bib {
+  position: relative;
+  margin-top: 0.5em;
+
+  &[hidden] {
+    display: none;
+  }
+
+  pre {
+    margin: 0;
+    padding: 0.8em 1em;
+    overflow-x: auto;
+    font-size: 0.72em;
+    line-height: 1.5;
+    white-space: pre;
+    background: #f6f8fa;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+  }
+}
+
+.pub-bib__copy {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  padding: 0.05em 0.6em;
+  font: inherit;
+  font-size: 0.7em;
+  color: var(--global-text-color);
+  background: #fff;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--global-link-color);
   }
 }

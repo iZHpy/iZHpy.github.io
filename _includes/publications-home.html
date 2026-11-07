@@ -1,0 +1,85 @@
+{%- comment -%}
+  Homepage publication list: main figure on the left; title / authors / venue / buttons on the right.
+  Data: _data/publications_home.yml. Styles: "Homepage publication list" in _sass/layout/_page.scss.
+  Authors: the first 3 and site.author.name stay visible; the others fold behind a "+N more" button
+  ("…" marks where names are folded). Buttons: Paper and Code are links, BibTeX opens a drop-down.
+  No leading indentation on purpose: kramdown would treat lines indented by 4+ spaces as code.
+{%- endcomment -%}
+<div class="pub-list">
+{%- for p in site.data.publications_home %}
+<div class="pub-item">
+<div class="pub-item__fig">
+{%- if p.image -%}
+{%- assign fig = p.image | prepend: '/images/papers/' | relative_url -%}
+<a href="{{ fig }}" target="_blank" rel="noopener"><img src="{{ fig }}" alt="Main figure: {{ p.title | escape }}" loading="lazy"/></a>
+{%- endif -%}
+</div>
+<div class="pub-item__body">
+<div class="pub-item__title">{{ p.title }}</div>
+<div class="pub-authors">
+{%- assign folded = 0 -%}
+{%- assign gap = false -%}
+{%- for a in p.authors -%}
+{%- assign show = false -%}
+{%- if forloop.index0 < 3 -%}{%- assign show = true -%}{%- endif -%}
+{%- if a contains site.author.name -%}{%- assign show = true -%}{%- endif -%}
+{%- capture name -%}{%- if a contains site.author.name -%}<u>{{ a }}</u>{%- else -%}{{ a }}{%- endif -%}{%- endcapture -%}
+{%- capture sep -%}{%- unless forloop.first -%}, {% endunless -%}{%- endcapture -%}
+{%- if show -%}
+{%- if gap -%}<span class="pub-authors__gap">, …</span>{%- assign gap = false -%}{%- endif -%}
+<span class="pub-author">{{ sep }}{{ name }}</span>
+{%- else -%}
+{%- assign folded = folded | plus: 1 -%}{%- assign gap = true -%}
+<span class="pub-author pub-author--extra">{{ sep }}{{ name }}</span>
+{%- endif -%}
+{%- endfor -%}
+{%- if gap -%}<span class="pub-authors__gap">, …</span>{%- endif -%}
+{%- if folded > 0 %} <button type="button" class="pub-authors__toggle" aria-expanded="false" data-more="+{{ folded }} more">+{{ folded }} more</button>{%- endif -%}
+</div>
+<div class="pub-item__venue">{{ p.venue }}</div>
+{%- if p.paper or p.code or p.bibtex %}
+<div class="pub-links">
+{%- comment -%} A value of "TBD" shows a greyed-out placeholder button that does nothing yet. {%- endcomment -%}
+{%- if p.paper == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fas fa-file-lines" aria-hidden="true"></i> Paper</span>
+{%- elsif p.paper -%}<a class="pub-btn" href="{{ p.paper }}" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i> Paper</a>{%- endif -%}
+{%- if p.bibtex == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX <i class="fas fa-caret-down" aria-hidden="true"></i></span>
+{%- elsif p.bibtex -%}<button type="button" class="pub-btn pub-btn--bib" aria-expanded="false"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX <i class="fas fa-caret-down pub-btn__caret" aria-hidden="true"></i></button>{%- endif -%}
+{%- if p.code == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fab fa-github" aria-hidden="true"></i> Code</span>
+{%- elsif p.code -%}<a class="pub-btn" href="{{ p.code }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{%- endif -%}
+</div>
+{%- endif -%}
+{%- if p.bibtex and p.bibtex != "TBD" %}
+<div class="pub-bib" hidden><button type="button" class="pub-bib__copy">Copy</button><pre>{{ p.bibtex | strip | escape }}</pre></div>
+{%- endif %}
+</div>
+</div>
+{%- endfor %}
+</div>
+<script>
+/* Buttons of the publication list: "+N more"/"less" authors, the BibTeX drop-down, and copying BibTeX.
+   Use only block comments here: the site's HTML compression joins this script into one line. */
+document.addEventListener('click', function (e) {
+  var more = e.target.closest('.pub-authors__toggle');
+  if (more) {
+    var open = more.parentElement.classList.toggle('is-expanded');
+    more.textContent = open ? 'less' : more.getAttribute('data-more');
+    more.setAttribute('aria-expanded', open);
+    return;
+  }
+  var bib = e.target.closest('.pub-btn--bib');
+  if (bib) {
+    var box = bib.closest('.pub-item__body').querySelector('.pub-bib');
+    box.hidden = !box.hidden;
+    bib.classList.toggle('is-open', !box.hidden);
+    bib.setAttribute('aria-expanded', !box.hidden);
+    return;
+  }
+  var copy = e.target.closest('.pub-bib__copy');
+  if (copy && navigator.clipboard) {
+    navigator.clipboard.writeText(copy.nextElementSibling.textContent).then(function () {
+      copy.textContent = 'Copied!';
+      setTimeout(function () { copy.textContent = 'Copy'; }, 1500);
+    });
+  }
+});
+</script>

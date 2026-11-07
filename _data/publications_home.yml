@@ -1,0 +1,166 @@
+# Publications shown on the homepage (rendered by _includes/publications-home.html), in display order.
+#   title:   paper title
+#   image:   main figure, a file in images/papers/ (optional)
+#   authors: author list; add "*" for equal contribution. Your own name is underlined automatically.
+#            The first 3 authors and you are shown; the rest fold behind a "+N more" button.
+#   venue:   venue line, shown in italics
+#   paper:   link for the "Paper" button (optional)
+#   code:    link for the "Code" button (optional)
+#   bibtex:  BibTeX entry for the "BibTeX" drop-down (optional; keep it free of blank lines)
+#   For paper / code / bibtex, the value TBD shows a greyed-out placeholder button until the real one is filled in.
+
+- title: "Query-Guided RoPE Modulation for Lost-in-the-Middle Mitigation in Long-Context LLMs"
+  image: qgpm.jpg
+  authors: ["Peiyu Zhang*", "Heng Ping*", "Shinibali Bhattacharyya", "Anwesan Pal", "Nikos Kanakaris", "Kevin Cheang", "Shixuan Li", "Wei Yang", "Paul Bogdan"]
+  venue: "arXiv preprint, 2026 (under review)"
+  paper: TBD   # TODO: arXiv link
+  bibtex: TBD  # TODO: BibTeX entry
+  code: https://github.com/iZHpy/QGPM
+
+- title: "Multi-Trajectory Latent Communication for Collaborative Reasoning"
+  image: mtlc.jpg
+  authors: ["Peiyu Zhang", "Heng Ping", "Nikos Kanakaris", "Shixuan Li", "Wei Yang", "Anzhe Cheng", "Yu Chang", "Paul Bogdan"]
+  venue: "Under review"
+  paper: TBD   # TODO: paper link
+  bibtex: TBD  # TODO: BibTeX entry
+  code: TBD    # TODO: code link
+
+- title: "HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling"
+  image: hyperlabel.jpg
+  authors: ["Peiyu Zhang*", "Heng Ping*", "Nikos Kanakaris", "Yucheng Zhao", "Shixuan Li", "Wei Yang", "Xiongye Xiao", "Paul Bogdan"]
+  venue: "arXiv preprint, 2026"
+  paper: https://arxiv.org/abs/2609.32276
+  code: https://github.com/iZHpy/Multi-label_hypergraph
+  bibtex: |
+    @article{zhang2026hyperlabel,
+      title   = {HyperLabel: Multi-Label Classification via Hypergraph-Based Label Correlation Modeling},
+      author  = {Zhang, Peiyu and Ping, Heng and Kanakaris, Nikos and Zhao, Yucheng and Li, Shixuan and Yang, Wei and Xiao, Xiongye and Bogdan, Paul},
+      journal = {arXiv preprint arXiv:2609.32276},
+      year    = {2026}
+    }
+
+- title: "Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge"
+  image: emnlp.jpg
+  authors: ["Wei Yang*", "Shixuan Li*", "Gengshuo Liu", "Heng Ping", "Peiyu Zhang", "Paul Bogdan", "Jesse Thomason"]
+  venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)"
+  paper: https://aclanthology.org/2026.emnlp-main.2642/
+  code: https://github.com/weiyang930/AgentAuditor
+  bibtex: |
+    @inproceedings{yang-etal-2026-auditing,
+      title     = {Auditing Multi-Agent {LLM} Reasoning Trees Outperforms Majority Vote and {LLM}-as-Judge},
+      author    = {Yang, Wei and Li, Shixuan and Liu, Gengshuo and Ping, Heng and Zhang, Peiyu and Bogdan, Paul and Thomason, Jesse},
+      booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+      month     = oct,
+      year      = {2026},
+      address   = {Budapest, Hungary},
+      publisher = {Association for Computational Linguistics},
+      url       = {https://aclanthology.org/2026.emnlp-main.2642/},
+      doi       = {10.18653/2026.emnlp-main.2642},
+      pages     = {60101--60118}
+    }
+
+- title: "Predicting Slip Transmission Pathways Using Graph Neural Networks"
+  image: npj.jpg
+  authors: ["Yuefeng Jin*", "Peiyu Zhang*", "Xiongye Xiao", "Ezra Mengiste", "Wenxi Li", "Amlan Das", "Katherine Shanks", "Matthew Kasemer", "Paul Bogdan", "Ashley Bucsek"]
+  venue: "npj Computational Materials, 2026"
+  paper: https://www.nature.com/articles/s41524-026-02218-3
+  bibtex: |
+    @article{jin2026predicting,
+      title   = {Predicting Slip Transmission Pathways Using Graph Neural Networks},
+      author  = {Jin, Yuefeng and Zhang, Peiyu and Xiao, Xiongye and Mengiste, Ezra and Li, Wenxi and Das, Amlan and Shanks, Katherine and Kasemer, Matthew and Bogdan, Paul and Bucsek, Ashley},
+      journal = {npj Computational Materials},
+      year    = {2026},
+      doi     = {10.1038/s41524-026-02218-3}
+    }
+
+- title: "COEVO: Co-Evolutionary Framework for Joint Functional Correctness and PPA Optimization in LLM-Based RTL Generation"
+  image: coevo.jpg
+  authors: ["Heng Ping", "Peiyu Zhang", "Shixuan Li", "Wei Yang", "Anzhe Cheng", "Shukai Duan", "Xiaole Zhang", "Paul Bogdan"]
+  venue: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD 2026)"
+  paper: https://arxiv.org/abs/2604.15001
+  code: https://github.com/hping666/COEVO
+  bibtex: |
+    @inproceedings{ping2026coevo,
+      title     = {COEVO: Co-Evolutionary Framework for Joint Functional Correctness and PPA Optimization in LLM-Based RTL Generation},
+      author    = {Ping, Heng and Zhang, Peiyu and Li, Shixuan and Yang, Wei and Cheng, Anzhe and Duan, Shukai and Zhang, Xiaole and Bogdan, Paul},
+      booktitle = {Proceedings of the IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
+      year      = {2026},
+      doi       = {10.1145/3831252.3834264}
+    }
+
+- title: "VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation"
+  image: verimoa.jpg
+  authors: ["Heng Ping", "Arijit Bhattacharjee", "Peiyu Zhang", "Shixuan Li", "Wei Yang", "Anzhe Cheng", "Xiaole Zhang", "Jesse Thomason", "Ali Jannesari", "Nesreen Ahmed", "Paul Bogdan"]
+  venue: "Conference on Machine Learning and Systems (MLSys 2026)"
+  paper: https://arxiv.org/abs/2510.27617
+  code: https://github.com/hping666/HDL_Generation
+  bibtex: |
+    @inproceedings{ping2026verimoa,
+      title     = {VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation},
+      author    = {Ping, Heng and Bhattacharjee, Arijit and Zhang, Peiyu and Li, Shixuan and Yang, Wei and Cheng, Anzhe and Zhang, Xiaole and Thomason, Jesse and Jannesari, Ali and Ahmed, Nesreen and Bogdan, Paul},
+      booktitle = {Proceedings of Machine Learning and Systems},
+      volume    = {8},
+      pages     = {1277--1290},
+      year      = {2026}
+    }
+
+- title: "HDLCoRe: A Training-Free Framework for Mitigating Hallucinations in LLM-Generated HDL"
+  image: hdlcore.jpg
+  authors: ["Heng Ping*", "Shixuan Li*", "Peiyu Zhang*", "Anzhe Cheng*", "Shukai Duan*", "Nikos Kanakaris", "Xiongye Xiao", "Wei Yang", "Shahin Nazarian", "Andrei Irimia", "Paul Bogdan"]
+  venue: "IEEE International Conference on LLM-Aided Design (LAD 2025)"
+  paper: https://arxiv.org/abs/2503.16528
+  bibtex: |
+    @inproceedings{ping2025hdlcore,
+      title     = {HDLCoRe: A Training-Free Framework for Mitigating Hallucinations in LLM-Generated HDL},
+      author    = {Ping, Heng and Li, Shixuan and Zhang, Peiyu and Cheng, Anzhe and Duan, Shukai and Kanakaris, Nikos and Xiao, Xiongye and Yang, Wei and Nazarian, Shahin and Irimia, Andrei and Bogdan, Paul},
+      booktitle = {IEEE International Conference on LLM-Aided Design (LAD)},
+      year      = {2025}
+    }
+
+- title: "End-to-End Learning Framework for Solving Non-Markovian Optimal Control"
+  image: e2e.jpg
+  authors: ["Xiaole Zhang*", "Peiyu Zhang*", "Xiongye Xiao*", "Shixuan Li", "Vasileios Tzoumas", "Vijay Gupta", "Paul Bogdan"]
+  venue: "International Conference on Machine Learning (ICML 2025)"
+  paper: https://arxiv.org/abs/2502.04649
+  code: https://github.com/iZHpy/Fractional-Order-Learning-for-Optimal-Control-Framework
+  bibtex: |
+    @inproceedings{zhang2025endtoend,
+      title     = {End-to-End Learning Framework for Solving Non-Markovian Optimal Control},
+      author    = {Zhang, Xiaole and Zhang, Peiyu and Xiao, Xiongye and Li, Shixuan and Tzoumas, Vasileios and Gupta, Vijay and Bogdan, Paul},
+      booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {267},
+      year      = {2025}
+    }
+
+- title: "MIHC: Multi-View Interpretable Hypergraph Neural Networks with Information Bottleneck for Chip Congestion Prediction"
+  image: mihc.jpg
+  authors: ["Zeyue Zhang*", "Heng Ping*", "Peiyu Zhang", "Nikos Kanakaris", "Xiaoling Lu", "Paul Bogdan", "Xiongye Xiao"]
+  venue: "Advances in Neural Information Processing Systems (NeurIPS 2025)"
+  paper: https://openreview.net/forum?id=YFQ0Xx5YlW
+  code: https://github.com/hping666/MIHC
+  bibtex: |
+    @inproceedings{zhang2025mihc,
+      title     = {MIHC: Multi-View Interpretable Hypergraph Neural Networks with Information Bottleneck for Chip Congestion Prediction},
+      author    = {Zhang, Zeyue and Ping, Heng and Zhang, Peiyu and Kanakaris, Nikos and Lu, Xiaoling and Bogdan, Paul and Xiao, Xiongye},
+      booktitle = {Advances in Neural Information Processing Systems},
+      volume    = {38},
+      pages     = {88312--88342},
+      year      = {2025}
+    }
+
+- title: "A Structure-Aware Framework for Learning Device Placements on Computation Graphs"
+  image: placement.jpg
+  authors: ["Shukai Duan*", "Heng Ping*", "Nikos Kanakaris*", "Xiongye Xiao*", "Panagiotis Kyriakis*", "Nesreen K. Ahmed", "Peiyu Zhang", "Guixiang Ma", "Mihai Capotă", "Shahin Nazarian", "Theodore L. Willke", "Paul Bogdan"]
+  venue: "Advances in Neural Information Processing Systems (NeurIPS 2024)"
+  paper: https://arxiv.org/abs/2405.14185
+  code: https://github.com/hping666/HSDAG
+  bibtex: |
+    @inproceedings{duan2024structure,
+      title     = {A Structure-Aware Framework for Learning Device Placements on Computation Graphs},
+      author    = {Duan, Shukai and Ping, Heng and Kanakaris, Nikos and Xiao, Xiongye and Kyriakis, Panagiotis and Ahmed, Nesreen K. and Zhang, Peiyu and Ma, Guixiang and Capot{\u{a}}, Mihai and Nazarian, Shahin and Willke, Theodore L. and Bogdan, Paul},
+      booktitle = {Advances in Neural Information Processing Systems},
+      volume    = {37},
+      pages     = {81748--81772},
+      year      = {2024}
+    }
