@@ -1,0 +1,28 @@
+<script>
+/* Buttons of the publication lists: "+N more"/"less" authors, the BibTeX drop-down, and copying BibTeX.
+   Include once per page. Use only block comments here: the site's HTML compression joins this script into one line. */
+document.addEventListener('click', function (e) {
+  var more = e.target.closest('.pub-authors__toggle');
+  if (more) {
+    var open = more.parentElement.classList.toggle('is-expanded');
+    more.textContent = open ? 'less' : more.getAttribute('data-more');
+    more.setAttribute('aria-expanded', open);
+    return;
+  }
+  var bib = e.target.closest('.pub-btn--bib');
+  if (bib) {
+    var box = bib.closest('.pub-item__body').querySelector('.pub-bib');
+    box.hidden = !box.hidden;
+    bib.classList.toggle('is-open', !box.hidden);
+    bib.setAttribute('aria-expanded', !box.hidden);
+    return;
+  }
+  var copy = e.target.closest('.pub-bib__copy');
+  if (copy && navigator.clipboard) {
+    navigator.clipboard.writeText(copy.nextElementSibling.textContent).then(function () {
+      copy.textContent = 'Copied!';
+      setTimeout(function () { copy.textContent = 'Copy'; }, 1500);
+    });
+  }
+});
+</script>

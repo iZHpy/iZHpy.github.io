@@ -1,0 +1,25 @@
+{%- comment -%}
+  Author list of one paper: {% include pub-authors.html authors=p.authors %}
+  The first 3 authors and site.author.name stay visible (yours underlined); the others fold behind a
+  "+N more" button, with "…" where names are folded. Used by publications-home.html and publications-all.html.
+{%- endcomment -%}
+<div class="pub-authors">
+{%- assign folded = 0 -%}
+{%- assign gap = false -%}
+{%- for a in include.authors -%}
+{%- assign show = false -%}
+{%- if forloop.index0 < 3 -%}{%- assign show = true -%}{%- endif -%}
+{%- if a contains site.author.name -%}{%- assign show = true -%}{%- endif -%}
+{%- capture name -%}{%- if a contains site.author.name -%}<u>{{ a }}</u>{%- else -%}{{ a }}{%- endif -%}{%- endcapture -%}
+{%- capture sep -%}{%- unless forloop.first -%}, {% endunless -%}{%- endcapture -%}
+{%- if show -%}
+{%- if gap -%}<span class="pub-authors__gap">, …</span>{%- assign gap = false -%}{%- endif -%}
+<span class="pub-author">{{ sep }}{{ name }}</span>
+{%- else -%}
+{%- assign folded = folded | plus: 1 -%}{%- assign gap = true -%}
+<span class="pub-author pub-author--extra">{{ sep }}{{ name }}</span>
+{%- endif -%}
+{%- endfor -%}
+{%- if gap -%}<span class="pub-authors__gap">, …</span>{%- endif -%}
+{%- if folded > 0 %} <button type="button" class="pub-authors__toggle" aria-expanded="false" data-more="+{{ folded }} more">+{{ folded }} more</button>{%- endif -%}
+</div>

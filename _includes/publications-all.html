@@ -1,0 +1,26 @@
+{%- comment -%}
+  Full publication list on the Publications page (_pages/publications.html), grouped by year.
+  Data: _data/publications_all.yml (newest first). Each entry: a venue tag on the left; title / authors /
+  venue / buttons on the right. Authors and buttons come from pub-authors.html and pub-links.html.
+  Styles: "Publications page list" in _sass/layout/_page.scss.
+{%- endcomment -%}
+<div class="pub-list pub-list--all">
+{%- assign current_year = "" -%}
+{%- for p in site.data.publications_all %}
+{%- assign year = p.year | append: "" -%}
+{%- if year != current_year %}
+<h2 class="pub-year">{{ year }}</h2>
+{%- assign current_year = year -%}
+{%- endif %}
+<div class="pub-row">
+<div class="pub-row__tag"><span class="pub-tag">{{ p.tag }}</span></div>
+<div class="pub-item__body">
+<div class="pub-item__title">{{ p.title }}</div>
+{% include pub-authors.html authors=p.authors %}
+<div class="pub-item__venue">{{ p.venue }}</div>
+{%- include pub-links.html p=p %}
+</div>
+</div>
+{%- endfor %}
+</div>
+{% include pub-scripts.html %}

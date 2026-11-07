@@ -1,0 +1,18 @@
+{%- comment -%}
+  Paper / BibTeX / Code buttons of one paper, plus its BibTeX drop-down: {% include pub-links.html p=p %}
+  A value of "TBD" shows a greyed-out placeholder button. Used by publications-home.html and publications-all.html.
+{%- endcomment -%}
+{%- assign p = include.p -%}
+{%- if p.paper or p.code or p.bibtex %}
+<div class="pub-links">
+{%- if p.paper == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fas fa-file-lines" aria-hidden="true"></i> Paper</span>
+{%- elsif p.paper -%}<a class="pub-btn" href="{{ p.paper }}" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i> Paper</a>{%- endif -%}
+{%- if p.bibtex == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX <i class="fas fa-caret-down" aria-hidden="true"></i></span>
+{%- elsif p.bibtex -%}<button type="button" class="pub-btn pub-btn--bib" aria-expanded="false"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX <i class="fas fa-caret-down pub-btn__caret" aria-hidden="true"></i></button>{%- endif -%}
+{%- if p.code == "TBD" -%}<span class="pub-btn pub-btn--soon" title="Coming soon"><i class="fab fa-github" aria-hidden="true"></i> Code</span>
+{%- elsif p.code -%}<a class="pub-btn" href="{{ p.code }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{%- endif -%}
+</div>
+{%- endif -%}
+{%- if p.bibtex and p.bibtex != "TBD" %}
+<div class="pub-bib" hidden><button type="button" class="pub-bib__copy">Copy</button><pre>{{ p.bibtex | strip | escape }}</pre></div>
+{%- endif %}

@@ -511,7 +511,7 @@
    Homepage publication list (_includes/publications-home.html)
    ========================================================================== */
 
-.page__content .pub-note {
+p.pub-note {  // works on both the homepage and the Publications page
   margin: 0 0 0.8em;
   font-size: 1em;
   color: var(--global-text-color-light);
@@ -609,7 +609,7 @@
   margin-top: 0.4em;
 }
 
-.page__content .pub-btn {
+.pub-links .pub-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
@@ -634,7 +634,7 @@
 }
 
 // Placeholder button (value "TBD" in _data/publications_home.yml): greyed out, not clickable yet
-.page__content .pub-btn--soon {
+.pub-links .pub-btn--soon {
   opacity: 0.5;
   cursor: default;
 
@@ -721,4 +721,51 @@
     height: auto;
     border-radius: 8px;
   }
+}
+
+
+/*
+   Publications page list (_includes/publications-all.html): year headings, venue tag on the left
+   ========================================================================== */
+
+.archive .pub-year {
+  margin: 1.4em 0 0.6em;
+  padding-bottom: 0.3em;
+  font-size: 1.6em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.pub-row {
+  display: flex;
+  flex-direction: column;  // phones: tag above the text
+  gap: 0.4em;
+  margin-bottom: 1.4em;
+  font-size: 1.2em;  // same size as the homepage list
+  line-height: 1.5;
+
+  @include breakpoint($medium) {
+    flex-direction: row;  // tablets and up: tag left, text right
+    gap: 1em;
+  }
+}
+
+.pub-row__tag {
+  flex: none;
+
+  @include breakpoint($medium) {
+    width: 7.5em;
+    text-align: right;
+    padding-top: 0.1em;
+  }
+}
+
+.pub-tag {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  background: var(--global-link-color);
+  border-radius: 4px;
 }
