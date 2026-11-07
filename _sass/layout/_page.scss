@@ -692,3 +692,33 @@
     border-color: var(--global-link-color);
   }
 }
+
+
+// Lists tagged with {: .compact-list} in Markdown (e.g. Honors and Awards): less space between items
+.page__content ul.compact-list li {
+  margin-bottom: 0.1em;  // default is 0.5em
+}
+
+
+// Visitor map at the bottom of the homepage (_includes/visitor-map.html)
+.visitor-map {
+  max-width: 260px;  // map width (was 360px); the widget scales to fit
+  margin: 3em auto 0;
+  text-align: center;
+}
+
+
+// Row of photos shown side by side at the same height (Miscellanea page).
+// Give each <img> style="flex: W/H" (its width divided by its height).
+.photo-row {
+  display: flex;
+  gap: 0.6em;
+  margin: 0.8em 0 1.5em;
+
+  img {
+    flex-basis: 0;
+    min-width: 0;
+    height: auto;
+    border-radius: 8px;
+  }
+}

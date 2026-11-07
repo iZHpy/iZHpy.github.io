@@ -55,7 +55,7 @@ I am always open to potential collaborations, please feel free to reach out.
 </div>
 
 
-💻 Experiences
+💻 Internship Experience
 ======
 ------
 
@@ -85,13 +85,35 @@ I am always open to potential collaborations, please feel free to reach out.
 ======
 ------ -->
 
+🔬 Academic Experience
+======
+------
+
+<div class="exp-item">
+<img class="exp-item__logo" src="{{ '/images/logos/tsinghua.png' | relative_url }}" alt="Tsinghua University logo"/>
+<div class="exp-item__text">
+<strong>Tsinghua University</strong>, Beijing, China<br/>
+<strong>Visiting Student</strong>&nbsp;&nbsp; <span class="exp-item__date">Jan 2023 – Feb 2024</span><br/>
+Supervisor: <a href="https://lars-group.github.io/">Prof. Quanming Yao</a>
+</div>
+</div>
+
+
 😊 Honors and Awards
 ======
 ------
 
-+ Annenberg Graduate Fellowship, USC, 2024
-+ Outstanding Undergraduate Graduates, HUST, 2024
-+ National Olympiad in Informatics in Province(NOIP), JIANGSU
++ **Annenberg Graduate Fellowship**, USC, 2024
++ **Outstanding Undergraduate Graduates**, HUST, 2024
++ **National Olympiad in Informatics in Province (NOIP)**, JIANGSU
+{: .compact-list}
+
+{% comment %} Visitor map: shown only once _includes/visitor-map.html contains the embed code {% endcomment %}
+{% capture visitor_map %}{% include visitor-map.html %}{% endcapture %}
+{% assign visitor_map_code = visitor_map | strip %}
+{% if visitor_map_code != "" %}
+<div class="visitor-map">{{ visitor_map_code }}</div>
+{% endif %}
 
 
 

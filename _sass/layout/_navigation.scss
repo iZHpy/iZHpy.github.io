@@ -210,7 +210,7 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
+        // was bold for the site-title link; it is now a plain "About" link like the others
         text-wrap: wrap;
 
         a {
@@ -258,6 +258,11 @@
                 transform: scaleX(1); /* reveal*/
       }
     }
+  }
+
+  // Link of the page being viewed (set in _includes/masthead.html)
+  li.is-active > a {
+    color: var(--global-link-color);
   }
 
   .hidden-links {
