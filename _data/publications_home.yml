@@ -13,9 +13,15 @@
   image: qgpm.jpg
   authors: ["Peiyu Zhang*", "Heng Ping*", "Shinibali Bhattacharyya", "Anwesan Pal", "Nikos Kanakaris", "Kevin Cheang", "Shixuan Li", "Wei Yang", "Paul Bogdan"]
   venue: "arXiv preprint, 2026 (under review)"
-  paper: TBD   # TODO: arXiv link
-  bibtex: TBD  # TODO: BibTeX entry
+  paper: https://arxiv.org/abs/2611.09554
   code: https://github.com/iZHpy/QGPM
+  bibtex: |
+    @article{zhang2026queryguided,
+      title   = {Query-Guided RoPE Modulation for Lost-in-the-Middle Mitigation in Long-Context LLMs},
+      author  = {Zhang, Peiyu and Ping, Heng and Bhattacharyya, Shinibali and Pal, Anwesan and Kanakaris, Nikos and Cheang, Kevin and Li, Shixuan and Yang, Wei and Bogdan, Paul},
+      journal = {arXiv preprint arXiv:2611.09554},
+      year    = {2026}
+    }
 
 - title: "Multi-Trajectory Latent Communication for Collaborative Reasoning"
   image: mtlc.jpg
